@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from '@mono/ui/button'
 import './App.css'
 
 function App() {
@@ -16,13 +17,13 @@ function App() {
     <>
       <h1>Monorepo test</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
 
-        <button onClick={fetchApi}>
+        <Button onClick={fetchApi}>
           Fetch api
-        </button>
+        </Button>
         <p>{JSON.stringify(apiData, null, 4)}</p>
       </div>
     </>
